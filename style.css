@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*HOME STYLING START*/
+.home{
+    background: url(background.png) top repeat-y;
+    padding: 0 0 220px 0;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.portfolio{
+    color: white;
+    margin: 25px 0;
+    font-size: xx-large;
+    text-shadow: 1px 0px 0px white;
+    letter-spacing: 0.5px;
+}
+.portfolio #port{
+    color: grey;
+}
+#name:hover{
+    color: grey;
+    cursor: pointer;
+}
+#port:hover{
+    color: white;
+    cursor: pointer;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 0;
+    background-color:  rgb(27, 27, 27);
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar ul li a{
+    color: white;
+    text-shadow: 1px 0px 0px white;
+    margin-left: 25px;
+    font-size: larger;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.navbar ul li a:hover{
+    text-decoration: overline;
+    color: grey;
+    cursor:pointer;
+}
+.me img{
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin: 150px auto auto auto;
+}
+.me .image-head{
+    border: 3px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+#para-1{
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-shadow: 1px 0px 0px white;
+    letter-spacing: 0.5px;
+    margin-bottom: 50px;
+}
+#para-1 span{
+    font-size: xx-large;
+}
+/*,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,*/
+.hamburger-menu {
+    width: 45px;
+    height: 35px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 100;
+}
+.line{
+    width: inherit;
+    height: 5px;
+    background-color: grey;
+    border-radius: 5px;
+    transform-origin: right;
+    transition: transform 0.3s ease;
+    visibility: hidden;
+}
+.line-2 {
+    height: 3px;
+}
+.change .line-1 {
+    transform: rotateZ(-45deg);
+}
+.change .line-2 {
+    display: none;
+}
+.change .line-3 {
+    transform: rotateZ(45deg);
+}
+.top-nav {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8));
+    position: fixed;
+    top: -200vh;
+    z-index: 50;
+    transition: top 0.3s;
+}
+.change .top-nav {
+    top: 0;
+    height: 100%;
+}
+.nav-list{
+    list-style: none;
+    text-align: center;
+    padding: 50px 0;
+}
+.nav-list li a{
+    color: white;
+    text-shadow: 1px 0px 0px white;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 600;
+}
+.nav-list li a:hover{
+    text-decoration: overline;
+    color: grey;
+    cursor:pointer;
+}
+/*,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,*/
+
+/*HOME STYLING END*/
+
+/*ABOUT ME STYLING START*/
+.about-me{
+    margin-top: 10px;
+    background: url(background.png) top repeat-y;
+    padding: 0 0 100px 0;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.about{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.about h1{
+    padding-top: 30px;
+    font-size: xx-large;
+    text-align: center;
+    text-shadow: 1px 0px 0px white;
+}
+.who{
+    font-size: larger;
+    text-shadow: 1px 0px 0px white;
+    text-align: center;
+}
+.about h3{
+    padding: 30px 0 0 50px;
+    font-size: xx-large;
+}
+#para-2{
+    padding: 30px 50px 0 50px;
+    font-size: larger;
+}
+button{
+    margin: 30px 0 0 50px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(37, 37, 37);
+    border: 3px groove white;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    
+}
+button:hover{
+    border-radius: 15px;   
+}
+/*ABOUT ME STYLING END*/
+
+/*HOME RESPONSIVE START*/
+@media screen and (min-width: 301px) and (max-width: 900px) {
+    .navbar ul li a{
+        display: none;
+    }
+    #port{
+        color: white;
+        visibility: hidden;
+    }
+    .me img{
+        margin: 150px auto auto auto;
+    } 
+    .portfolio{
+        margin-left: 25px;
+    }
+    .line{
+        visibility: visible;
+    }
+}
+@media screen and (min-width: 470px){
+    #port{
+        color: white;
+        visibility: visible;
+    }
+}
+@media screen and (min-width: 100px) and (max-width: 300px){
+    .portfolio{
+        visibility: hidden;
+    }
+}
+/*HOME RESPONSIVE END*/
+
+/*RESUME STYLING START*/
+.resume{
+    margin-top: 10px;
+    background: url(background.png) top repeat-y;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.my-resume{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.my-resume h1{
+    padding-top: 30px;
+    font-size: xx-large;
+    text-align: center;
+    text-shadow: 1px 0px 0px white;
+}
+.my-resume h3{
+    text-shadow: 1px 0px 0px white;
+    padding: 0 0 0 50px;
+    font-size: x-large;
+    visibility: hidden;
+}
+.my-resume h5{
+    text-shadow: 1px 0px 0px white;
+    padding: 0 0 0 70px;
+    font-size: larger;
+    color: whitesmoke;
+}
+.my-resume p{
+    padding: 10px 50px 0 70px;
+    font-size: large;
+    color: whitesmoke;
+}
+.skills ul li{
+    display: inline-block;
+   
+}
+/*RESUME STYLING END*/
+
+/*RESUME RESPONSIVE START*/
+@media screen and (min-width: 1280px){
+    .undergrad{
+        float: left;
+        border: none;
+        width: 630px;
+        height: 250px;
+    }
+    .high{
+        float: right;
+        border: none;
+        width: 630px;
+        height: 250px; 
+        margin-right: 1px; 
+    }
+    .sec{
+        float: left;
+        border: none;
+        width: 630px;
+        height: 250px;
+    }
+    .pry{
+        float: right;
+        border: none;
+        width: 630px;
+        height: 250px;  
+        margin-right: 1px;
+    }
+}
+/*RESUME RESPONSIVE END*/
+
+/*SERVICES STYLING START*/
+.services{
+    margin-top: 10px;
+    background: url(background.png) top repeat-y;
+    padding: 0 0 100px 0;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.services h1{
+    padding-top: 30px;
+    font-size: xx-large;
+    text-align: center;
+    text-shadow: 1px 0px 0px white;
+}
+.my-services{
+    display:none;
+}
+.my-services ul li{
+    list-style: none;
+}
+#service{
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    padding: 10px 0;
+    border: 5px solid rgba(17, 17, 17, 0.267);
+    border-radius: 10px;
+    font-size: larger;
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+#service:hover{
+    background-color:rgb(27, 27, 27);
+    color: white;
+    border: 5px solid white;
+    width: 302px;
+    height: 152px;
+}
+#service span{
+    font-size: x-large;
+    font-weight: 900;
+    text-shadow: 1px px 0px white;
+} 
+.who-1{
+    padding-bottom: 30px;
+    font-size: larger;
+    text-shadow: 1px 0px 0px white;
+    text-align: center;
+}
+.big{
+    visibility:visible;
+    display: flex;
+    justify-content: space-evenly;
+}
+@media screen and (min-width: 200px) and (max-width: 800px){
+    .my-services{
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+        
+    }
+    .big{
+        display: none;
+    }
+}
+/*SERVICES STYLING END*/
+
+.contact{
+    margin-top: 10px;
+    background: url(background.png) top repeat-y;
+    padding: 0 0 100px 0;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.contact h1{
+    padding-top: 30px;
+    font-size: xx-large;
+    text-align: center;
+    text-shadow: 1px 0px 0px white;
+}
+.contact h3{
+    padding-top: 30px;
+    font-size: x-large;
+    text-align: center;
+    text-shadow: 1px 0px 0px white;
+}
+.contact p{
+    padding-top: 30px;
+    font-size: large;
+    text-align: center;
+    text-shadow: 1px 0px 0px white;
+}
+
+footer{
+    margin-top: 10px;
+    background: url(background.png) left repeat-y;
+    padding: 0 0 100px 0;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+footer h4{
+    padding-top: 60px;
+    font-size: 15px;
+    text-align: center;
+    text-shadow: 1px 0px 0px white;
+}
