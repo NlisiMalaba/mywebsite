@@ -153,53 +153,6 @@ html{
 
 /*HOME STYLING END*/
 
-/*ABOUT ME STYLING START*/
-.about-me{
-    margin-top: 10px;
-    background: url(background.png) top repeat-y;
-    padding: 0 0 100px 0;
-    width: 100%;
-    font-family: 'Times New Roman', Times, serif;
-}
-.about{
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-}
-.about h1{
-    padding-top: 30px;
-    font-size: xx-large;
-    text-align: center;
-    text-shadow: 1px 0px 0px white;
-}
-.who{
-    font-size: larger;
-    text-shadow: 1px 0px 0px white;
-    text-align: center;
-}
-.about h3{
-    padding: 30px 0 0 50px;
-    font-size: xx-large;
-}
-#para-2{
-    padding: 30px 50px 0 50px;
-    font-size: larger;
-}
-button{
-    margin: 30px 0 0 50px;
-    padding: 10px;
-    color: white;
-    background-color: rgb(37, 37, 37);
-    border: 3px groove white;
-    border-radius: 5px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: medium;
-    
-}
-button:hover{
-    border-radius: 15px;   
-}
-/*ABOUT ME STYLING END*/
-
 /*HOME RESPONSIVE START*/
 @media screen and (min-width: 301px) and (max-width: 900px) {
     .navbar ul li a{
@@ -231,6 +184,59 @@ button:hover{
     }
 }
 /*HOME RESPONSIVE END*/
+
+/*ABOUT ME STYLING START*/
+.about-me{
+    margin-top: 10px;
+    background: url(background.png) top repeat-y;
+    padding: 0 0 100px 0;
+    width: 100%;
+    height: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+.about{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.about h1{
+    padding-top: 30px;
+    font-size: xx-large;
+    text-align: center;
+    text-shadow: 1px 0px 0px white;
+}
+.who{
+    font-size: larger;
+    text-shadow: 1px 0px 0px white;
+    text-align: center;
+}
+.about h3{
+    padding: 30px 0 0 50px;
+    font-size: xx-large;
+}
+#para-2{
+    padding: 30px 50px 0 50px;
+    font-size: larger;
+}
+#all{
+   color: white;
+}
+.clear{
+    clear: both;
+}
+button{
+    margin: 30px 0 0 50px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(37, 37, 37);
+    border: 3px groove white;
+    border-radius: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium; 
+}
+button:hover{
+    border-radius: 5px;   
+}
+/*ABOUT ME STYLING END*/
 
 /*RESUME STYLING START*/
 .resume{
@@ -270,6 +276,7 @@ button:hover{
     display: inline-block;
    
 }
+
 /*RESUME STYLING END*/
 
 /*RESUME RESPONSIVE START*/
@@ -362,11 +369,13 @@ button:hover{
     .my-services{
         display: flex;
         align-items: center;
-        justify-content:space-evenly;
-        
+        justify-content:space-evenly;  
     }
     .big{
         display: none;
+    }
+    .level{
+        text-decoration: overline;
     }
 }
 /*SERVICES STYLING END*/
